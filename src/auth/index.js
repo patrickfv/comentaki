@@ -86,7 +86,7 @@ export function useDatabase(endpoint) {
 
 export function useDatabasePush(endpoint) {
     const [status, setStatus] = useState('')
-  
+
     const save = data => {
       const ref = firebase.database().ref(endpoint)
       ref.push(data, err => {
